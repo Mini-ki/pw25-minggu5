@@ -45,7 +45,14 @@ document.getElementById('kolomSignUp').addEventListener('submit', function(submi
         isValid = false;
     }
 
-    if (!isValid) {
-        submit.preventDefault();
+    console.log(isValid);
+    submit.preventDefault();
+    if (isValid) {
+        console.log('cek');
+        document.getElementById('iconSignUpSukses').classList.add('show');
+        setTimeout(() => {
+            document.getElementById('kolomSignUp').submit(); 
+        }, 2000);
     }
+
 });

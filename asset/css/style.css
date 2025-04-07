@@ -284,3 +284,69 @@ section {
     margin-top: 4px;
     display: block;
 }
+
+.iconSuksesWrapper{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.iconSuksesWrapper.show{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.errorBoxWrapper {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    z-index: 9999;
+    pointer-events: none; 
+}
+
+#errorBox {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #FE4F2D;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#errorBox.show{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+#iconSignUpSukses{
+    color: #4BB543;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+#iconLogInSukses{
+    color: #4BB543;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+

@@ -2,6 +2,7 @@
 <head>
     <title>SIMPELAH</title>
     <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -30,7 +31,7 @@
             <div class="kolomform">
                 <h1>Welcome Back!!</h1>
                 <h2>Login</h2>
-                <form action="" id="formLogin">
+                <form id="kolomLogin">
                     <label for="">Email</label>
                     <input type="text" placeholder="" id="emailLogin">
                     <label for="">Password</label>
@@ -40,5 +41,14 @@
             </div>
         </section>
     </div>
+    <div class="errorBoxWrapper">
+        <div id="errorBox">
+            Invalid Email or Password. Please try again!!
+        </div>
+    </div>
+    <div class="iconSuksesWrapper" id="iconSignUpSukses">
+        <i class="fa-solid fa-circle-check checkIcon"></i>
+    </div>
+    <script src="../asset/js/login.js"></script>
 </body>
 </html>
